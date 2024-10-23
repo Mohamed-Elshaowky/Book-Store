@@ -1,0 +1,14 @@
+.about {
+  min-height: calc(100vh - 240px);
+  padding: 30px;
+}
+.about h1 {
+  font-size: 40px;
+  border-bottom: 3px solid gray;
+  color: gray;
+  width: max-content;
+}
+.about p {
+  margin: 15px 0;
+  font-size: 21px;
+}

@@ -1,0 +1,45 @@
+.authors {
+  padding: 30px;
+}
+.authors-search-wrapper {
+  margin-bottom: 30px;
+}
+.authors-search-input {
+  width: 100%;
+  height: 50%;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  font-size: 21px;
+  border-radius: 10px;
+}
+.authors-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.author {
+  width: 300px;
+  height: 365px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 10px;
+  background-color: white;
+  padding: 5px;
+}
+.author-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 7px;
+}
+/* Media quires */
+@media (max-width: 767px) {
+  .authors {
+    padding: 10px;
+  }
+  .author {
+    width: 250px;
+    height: 300px;
+  }
+}

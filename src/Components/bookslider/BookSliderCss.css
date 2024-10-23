@@ -1,0 +1,109 @@
+.bookslider-container {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 40px;
+  padding: 20px;
+  cursor: grab;
+  background-color: #fff;
+}
+.bookslider-container > i {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 55px;
+  border-radius: 5px;
+  color: var(--main-color);
+  background-color: #222;
+  z-index: 2;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.bookslider-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.1s ease;
+}
+.book-slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: snow;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px;
+}
+.book-slide-item-image {
+  max-width: 250px;
+  height: 385;
+  pointer-events: none;
+}
+
+.book-slide-item-price {
+  color: crimson;
+  font-size: 21px;
+  font-weight: bold;
+}
+.book-slide-icons-wrapper {
+  border-top: 1px solid gray;
+  padding-top: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.book-slide-icons-wrapper > i {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb (67, 67, 67);
+  padding: 0 10px;
+}
+/* Rating */
+.rating {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 204, 0);
+  font-size: 22px;
+  justify-content: space-around;
+}
+.rating > i {
+  padding: 0 2px;
+}
+.rating span:first-of-type {
+  font-weight: 500;
+  margin: 0 10px;
+}
+.rating span:last-of-type {
+  color: rgb(175, 130, 130);
+  font-size: 16px;
+}
+/* Media Quires */
+@media (max-width: 578px) {
+  .bookslider-container {
+    padding: 0 0 10px 0;
+  }
+  .book-slide-item {
+    width: 70vw;
+    flex: 1;
+  }
+  .book-slide-item-image {
+    width: calc(70vw - 30px);
+    height: 220px;
+  }
+  .book-slide-item-price,
+  .book-slide-icons-wrapper > i {
+    font-size: 18px;
+  }
+  .book-slide-item-title {
+    font-size: 20px;
+  }
+}

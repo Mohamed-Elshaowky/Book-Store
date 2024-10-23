@@ -1,0 +1,30 @@
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.service-item {
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid gray;
+  border-radius: 60px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  width: 200px;
+  text-align: center;
+}
+.service-item i {
+  font-size: 25px;
+}
+/* Media quieres */
+@media (max-width: 576px) {
+  .services {
+    display: none;
+  }
+}

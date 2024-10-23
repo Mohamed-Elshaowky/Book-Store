@@ -1,0 +1,154 @@
+.book {
+  padding: 30px;
+}
+.book-conent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.book-content-img {
+  width: 30%;
+  height: 300px;
+  object-fit: contain;
+  padding: 20px;
+  box-shadow: 0 0 1px 2px snow;
+  border-radius: 7px;
+  margin-right: 20px;
+  background-color: snow;
+}
+.book-content-info {
+  width: 60%;
+}
+.book-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+.book-author,
+.book-date,
+.book-stock {
+  color: rgb(124, 124, 124);
+  font-size: 21px;
+  margin: 14px 0;
+  font-weight: 600;
+}
+.book-author span,
+.book-date b,
+.book-stock b {
+  color: rgb(2, 79, 79);
+}
+.book-add-to-cart {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.book-add-to-cart-input {
+  border-radius: 5px;
+  border: 1px solid rgb(93, 134, 93);
+  padding: 5px;
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.book-add-to-cart-btn {
+  cursor: pointer;
+  color: rgb(93, 134, 93);
+  background-color: transparent;
+  border: 1px solid rgb(93, 134, 93);
+  border-radius: 5px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+.book-add-to-cart-btn i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.book-add-to-cart-btn:hover {
+  background-color: rgba(112, 240, 112, 0.34);
+}
+.book-content-info-div {
+  margin: 15px 0;
+  max-width: 400px;
+}
+.book-description {
+  width: 80%;
+  font-size: 21px;
+  line-height: 1.8;
+  color: #6e6a6a;
+}
+.book-icons {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.book-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 50px;
+  font-size: 21px;
+  color: teal;
+}
+.book-icon small {
+  font-weight: 600;
+}
+.book-icon i {
+  font-size: 32px;
+  margin: 5px 0;
+}
+/* Mediua Queires */
+@media (max-width: 767px) {
+  .book {
+    padding: 30px 15px;
+  }
+  .book-content-img {
+    width: 40%;
+  }
+  .book-content-info {
+    width: 60%;
+  }
+  .book-description {
+    width: 100%;
+  }
+  .book-author,
+  .book-rating,
+  .book-stock,
+  .book-date,
+  .book-add-to-cart,
+  .book-add-to-cart-btn,
+  .book-add-to-cart-input,
+  .book-description,
+  .book-icon,
+  .book-icon b {
+    font-size: 18px;
+  }
+  .book-title,
+  .book-icon i {
+    font-size: 25px;
+  }
+}
+@media (max-width: 567px) {
+  .book-conent,
+  .book-add-to-cart {
+    flex-direction: column;
+  }
+  .book-content-img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .book-content-info {
+    width: 100%;
+  }
+  .book-add-to-cart-btn,
+  .book-add-to-cart-input {
+    margin-top: 7px;
+  }
+}
